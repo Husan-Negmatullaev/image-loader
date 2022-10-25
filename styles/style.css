@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    background-color: #666;
+    font-family: "Montserrat";
+}
+
+.container {
+    padding-top: 5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, .2);
+}
+
+.btn {
+    color: #42b983;
+    position: relative;
+    border-radius: 99px;
+    border: 1px solid #42b983;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    outline: none;
+    background-color: #fff;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.btn:not(:last-child) {
+    margin: 0px 1rem 0px 0px;
+}
+
+.btn.primary {
+    background-color: #42b983;
+    color: #fff;
+}
+
+.btn:active {
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+input[type=file] {
+    display: none;
+}
+
+.wrapper-preview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0.5rem;
+    gap: .5rem;
+}
+
+.wrapper-preview__image {
+    position: relative;
+    margin-bottom: .5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease 0s;
+}
+
+.wrapper-preview__image._removing {
+    transform: scale(0);
+}
+
+.wrapper-preview__image img {
+    width: auto;
+    height: 180px;
+    vertical-align: top;
+}
+
+.wrapper-preview__image:hover .wrapper-preview__remove,
+.wrapper-preview__image:hover .wrapper-preview__info {
+    transform: translateY(0%);
+}
+
+.wrapper-preview__remove {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease 0s;
+}
+
+.wrapper-preview__info {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    min-height: 25px;
+    font-size: .8rem;
+    gap: 5px;
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(100%);
+    padding: 0 5px;
+    transition: transform 0.3s ease 0s;
+}
+
+.wrapper-preview__file-name {
+
+}
